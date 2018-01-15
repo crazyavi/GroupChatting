@@ -1,0 +1,27 @@
+body {
+	background:black;
+    font:12px arial;
+    color: teal;
+    text-align:center;
+    padding:35px; } 
+input { font:20px arial; } 
+a:hover { text-decoration:underline; } 
+.abhi {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    background: teal;
+    width: 1200px;
+    border: 2px solid #ACD8F0;	}
+.chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 70px;
+    background: #fff;
+    height: 300px;
+    width: 700px;
+    border: 1px solid #ACD8F0;
+    overflow: auto; }
+.anan { padding:12.5px 25px 12.5px 25px; }
+.welcome { background:white;float:left; }
+.logout {float:right; }

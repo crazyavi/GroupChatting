@@ -1,0 +1,41 @@
+body{
+	background:aqua;
+	padding:0;
+	margin:0;
+}
+header{
+	padding:12px;
+	color:white;
+	background:black;
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+a:hover{
+	color:aqua;
+}
+h1,nav{
+	padding:0;
+	margin:0;
+	display:inline-block;
+}
+nav{
+	padding:12px;
+	float:right;
+}
+footer{
+	position: absolute;
+    margin-top: 463px;
+    width: 100%;
+    background: black;
+    color: white;
+}
+footer p{
+	padding: 0 12px;
+	display:inline-block;
+	float:left
+}
+.fpr{
+	float:right;
+}

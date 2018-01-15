@@ -1,0 +1,30 @@
+
+<div class="abhi">
+    <div class="anan">
+        <h2 class="welcome">Welcome, <?php echo $_SESSION['email'] ?><b></b></h2>
+        <p class="logout"><a href="home.php">Logout</a></p>
+		
+        <div style="clear:both"></div>
+    </div>
+     
+    <div class="chatbox">
+	<?php 
+	for($i = 0 ; $i <= count($data)-1; $i++ ){
+	echo "<h3 style=\"display:inline\">".$data[$i][0].":</h3>";
+	echo "<p style=\"display:inline\">".$data[$i][1]."</p><br>";
+	}
+	?>
+	</div>
+     
+    <form action="chatting.php" method="post">
+        <input type="text" name="chat" id="usermsg" size="63" placeholder="Enter some text .." >
+        <input type="submit" name="submit" value="Send" >
+		<a href="chatting.php">Refresh</a>
+    </form>
+	<div>
+	<?php
+	foreach($error as $er){
+		print "<p>".$er."</p>";
+	}?>
+	</div>
+</div>

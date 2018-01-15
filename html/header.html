@@ -1,0 +1,20 @@
+<header>
+<h1>Home</h1>
+<nav>
+    <a href="index.php">Home</a>&nbsp;&nbsp;
+    <a href="login.php">
+	<?php if(isset($_SESSION['email'])) 
+				echo "Logout";
+			else
+				echo "Login";
+	?>
+	</a>&nbsp;&nbsp;
+    <a href="register1.php">Register</a>&nbsp;&nbsp;
+    <a href="#">About</a>&nbsp;&nbsp;
+	<?php if(isset($_SESSION['email'])){
+				echo "<a href=\"chatting.php\">Chat</a>";
+			}
+	?>
+
+</nav>
+</header>
